@@ -1,6 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    background-image: url('/static/img/khamkeo-vilaysing-Ef7C4bPDL4A-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .footer {
     margin-top: 190px;
     padding: 42px;
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.6rem;
 }
 
+nav {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.6rem;
+}
+
+.text {
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+.text1 {
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+.published {
+    font-size: 1.5rem;
+}

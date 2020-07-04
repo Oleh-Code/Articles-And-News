@@ -2,17 +2,17 @@
 {% block title %} {{object.title}} {% endblock %}
 
 {% block content %}
-    <h1 class="text-center">{{object.title}}</h1>
-    <p class="text-muted text-center"><span>Published: {{object.published_date}}</span></p>
+    <h1 class="text-center text1">{{object.title}}</h1>
+    <p class="text-center text1 published">Published: {{object.published_date}}</p>
     <div class="row">
         <div class="col-lg-6">
             <img src="{{object.image.url}}" class="img-fluid">
         </div>
         <div class="col-lg-6">
-            <h5>Created by: {{object.user}}</h5> 
-            <h5>Created date: {{object.created_date}}</h5>
-            <h5>Text: </h5>
-            <h5>{{object.text}}</h5>
+            <h5 class="text1">Created by: {{object.user}}</h5> 
+            <h5 class="text1">Created date: {{object.created_date}}</h5>
+            <h5 class="text1">Text: </h5>
+            <h5 class="text1">{{object.text}}</h5>
         </div>
     </div>
 {% endblock %}
