@@ -8,11 +8,11 @@ body {
 }
 
 .footer {
-    margin-top: 190px;
-    padding: 42px;
-    text-align: center;
     font-family: 'Permanent Marker', cursive;
     font-size: 1.6rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 nav {
@@ -32,4 +32,11 @@ nav {
 
 .published {
     font-size: 1.5rem;
+}
+
+.list {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    margin: 0px;
 }

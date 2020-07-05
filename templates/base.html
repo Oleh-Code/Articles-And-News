@@ -11,9 +11,11 @@
 <body>
     {% include 'main/navbar.html' %}
     <div class="container">
-        {% block content %}
+        <div class="row">
+            {% block content %}
 
-        {% endblock %}
+            {% endblock %}
+        </div>
     </div>
     {% include 'main/footer.html' %}
 </body>

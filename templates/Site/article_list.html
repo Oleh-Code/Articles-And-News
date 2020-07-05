@@ -1,12 +1,10 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="row">
         {% for article in article_list %}
-        <div class="col-lg-5">
-            <h3 class="text-center text">{{article.title}}</h3>
-            <a href="{% url 'articles_detail' slug=article.url%}"><img src="{{article.image.url}}" class="img-fluid"></a>
-        </div>
+            <div class="col-lg-6">
+                <h3 class="text-center text">{{article.title}}</h3>
+                <a href="{% url 'articles_detail' slug=article.url%}"><img src="{{article.image.url}}" class="img-fluid"></a>
+             </div>
         {% endfor %}
-    </div>
 {% endblock %}
