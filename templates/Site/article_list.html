@@ -2,9 +2,11 @@
 
 {% block content %}
         {% for article in article_list %}
-            <div class="col-lg-6">
+            <div class="col-lg-4 list">
                 <h3 class="text-center text">{{article.title}}</h3>
+                {% if article.image %}
                 <a href="{% url 'articles_detail' slug=article.url%}"><img src="{{article.image.url}}" class="img-fluid"></a>
+                {% endif %}
              </div>
         {% endfor %}
 {% endblock %}

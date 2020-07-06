@@ -11,9 +11,10 @@ body {
     font-family: 'Permanent Marker', cursive;
     font-size: 1.6rem;
     position: fixed;
-    left: 0;
+    right: 540px;
     bottom: 0;
 }
+
 
 nav {
     font-family: 'Permanent Marker', cursive;
@@ -35,8 +36,6 @@ nav {
 }
 
 .list {
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
-    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

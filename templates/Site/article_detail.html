@@ -9,7 +9,9 @@
         <p class="text-center text1 published">Published: {{object.published_date}}</p>
     </div>
     <div class="col-lg-6">
+        {% if object.image %}
         <img src="{{object.image.url}}" class="img-fluid">
+        {% endif %}
     </div>
     <div class="col-lg-6">
         <h5 class="text1">Created by: {{object.user}}</h5> 
@@ -18,3 +20,5 @@
         <h5 class="text1">{{object.text}}</h5>
     </div>
 {% endblock %}
+
+

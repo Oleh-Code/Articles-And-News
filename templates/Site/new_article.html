@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %} New Post {% endblock %}
+
+{% block form %}
+    <div class="col-lg-4">
+        <h1 class="text">New Article</h1>
+    </div>
+    <div class="col-lg-4">
+        <form method="POST" class="text" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="col-lg-5">
+                <label class="text">Title:</label>
+                {{form.title}}
+            </div>
+            <div class="col-lg-5">
+                <label class="text">Text:</label>
+                {{form.text}}
+            </div>            
+            <div class="col-lg-5">
+                <label class="text">Image:</label>
+                <input type="file" name="{{form.image.name}}">
+            </div>
+            <div class="col-lg-5">
+                <label class="text">Url:</label>
+                <input type="text" name="{{form.url.name}}" placeholder="Write url, please">
+            </div>
+            <div class="col-lg-5">
+                <button class="btn btn-dark" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
